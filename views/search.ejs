@@ -62,17 +62,16 @@
         $.ajax({
             method: 'DELETE',
             url: '/delete',
-            data: {_id : e.target.dataset.id}
+            data: {_id : e.target.dataset.id} 
         }).done((result) => {
             
-            $(this).parent('li').fadeOut();
+            $(this).parent('li').fadeOut(); 
         }). fail((error) => {
             
         })
 
         });
 
-        
         $('.update').click(function(e) {
         const id = e.target.dataset.id;
         location.replace(`/edit/${id}`);
