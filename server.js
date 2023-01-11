@@ -198,6 +198,3 @@ app.get('/search', function(req, res) {
     res.render('search.ejs', {postdata : result});
   })
 })
-
-
-
